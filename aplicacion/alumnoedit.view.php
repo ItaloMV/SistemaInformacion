@@ -28,8 +28,8 @@ if(isset($_GET['id'])) {
 <html>
 <head>
 <title>Inicio | Registro de Notas</title>
-    <meta name="description" content="Registro de Notas del Centro Escolar Profesor Lennin" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="description" content="Registro de Notas de I.E.P. San Ignacio de Loyola" />
+    <link rel="stylesheet" href="css/index.css" />
 
 </head>
 <body>
@@ -44,6 +44,7 @@ if(isset($_GET['id'])) {
         <li><a href="listadoalumnos.view.php">Listado de Alumnos</a> </li>
         <li><a href="notas.view.php">Registro de Notas</a> </li>
         <li><a href="listadonotas.view.php">Consulta de Notas</a> </li>
+        <!--<li><a href="dashboard.view.php">Dashboard</a> </li>-->
         <li class="right"><a href="logout.php">Salir</a> </li>
 
     </ul>

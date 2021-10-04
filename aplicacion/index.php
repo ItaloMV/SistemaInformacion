@@ -10,7 +10,7 @@ $messages = [
 <head>
 <title>Login | Registro de Notas</title>
     <meta name="description" content="Registro de Notas del Centro Escolar Profesor Lennin" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
 
 </head>
 <body>

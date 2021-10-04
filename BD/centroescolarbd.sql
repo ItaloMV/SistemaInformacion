@@ -46,6 +46,7 @@ CREATE TABLE `alumnos` (
 
 LOCK TABLES `alumnos` WRITE;
 /*!40000 ALTER TABLE `alumnos` DISABLE KEYS */;
+INSERT INTO `alumnos` VALUES (3,2,'David','Salguero Erazo','M',1,1),(4,3,'Andy Vladimir','Salguero','M',1,1);
 /*!40000 ALTER TABLE `alumnos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -70,6 +71,7 @@ CREATE TABLE `grados` (
 
 LOCK TABLES `grados` WRITE;
 /*!40000 ALTER TABLE `grados` DISABLE KEYS */;
+INSERT INTO `grados` VALUES (1,'Primer Grado','I');
 /*!40000 ALTER TABLE `grados` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -97,6 +99,7 @@ CREATE TABLE `materias` (
 
 LOCK TABLES `materias` WRITE;
 /*!40000 ALTER TABLE `materias` DISABLE KEYS */;
+INSERT INTO `materias` VALUES (1,'Ciencia Salud y Medio Ambiente',4,1);
 /*!40000 ALTER TABLE `materias` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -109,7 +112,10 @@ DROP TABLE IF EXISTS `notas`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `notas` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nota` decimal(10,2) DEFAULT NULL,
+  `nota1` decimal(10,2) DEFAULT NULL,
+  `nota2` decimal(10,2) DEFAULT NULL,
+  `nota3` decimal(10,2) DEFAULT NULL,
+  `nota4` decimal(10,2) DEFAULT NULL,
   `observaciones` varchar(100) DEFAULT NULL,
   `id_alumno` int(11) NOT NULL,
   `id_materia` int(11) NOT NULL,
@@ -127,6 +133,7 @@ CREATE TABLE `notas` (
 
 LOCK TABLES `notas` WRITE;
 /*!40000 ALTER TABLE `notas` DISABLE KEYS */;
+INSERT INTO `notas` VALUES (216,10.00,'Sin observaciones',3,1),(217,7.00,'Sin observaciones',3,1),(218,6.00,'Sin observaciones',3,1),(219,8.00,'Sin observaciones',3,1),(220,8.00,'',4,1),(221,9.00,'',4,1),(222,9.00,'',4,1),(223,6.00,'',4,1);
 /*!40000 ALTER TABLE `notas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -150,6 +157,7 @@ CREATE TABLE `secciones` (
 
 LOCK TABLES `secciones` WRITE;
 /*!40000 ALTER TABLE `secciones` DISABLE KEYS */;
+INSERT INTO `secciones` VALUES (1,'A'),(2,'B'),(3,'C');
 /*!40000 ALTER TABLE `secciones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -176,6 +184,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'admin','admin123','Lennin','Administrador'),(2,'profesor','profe123','Jose','Profesor'),(3,'maria','maria123','Maria','Padre');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
